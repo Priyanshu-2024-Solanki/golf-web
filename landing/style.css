@@ -1,0 +1,123 @@
+@font-face {
+    font-family: cooper;
+    src: url(./Cooper\ Black\ Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cooper";
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+#nav #part2 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+    margin: 22px;
+}
+#nav #part2 a:nth-last-child(1) {
+    padding: 6px 25px;
+    border-radius: 50px;
+    position: relative;
+    border: 1px solid #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+#nav #part2 a:nth-last-child(1) #green {
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0%;
+}
+#nav #part2 a:nth-last-child(1) h5 {
+    font-weight: 400;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1) #arrow i {
+    position: absolute;
+    z-index: 99;
+    bottom: 18%;
+}
+#main>h1{
+    font-size: 5.4vw;
+    width: 60%;
+    position: relative;
+    text-align: center;
+    z-index: 99;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+#main>h1::after{
+    content: "";
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    width: 35%;
+    height: 16px;
+    bottom: -3%;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#img1 {
+    position: absolute;
+    top: 100px;
+    height: 400px;
+    left: 60px;
+}
+#img2 {
+    position: absolute;
+    height: 220px;
+    top: 120px;
+    right: 320px;
+}
+#img3 {
+    position: absolute;
+    height: 220px;
+    bottom: 70px;
+    right: 90px;
+}
+#main img {
+    transition: margin 0.4s ease;
+}
+#main img:hover{
+    margin-top: -20px;
+}
